@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAFE - Tickets</title>
+  <link rel="icon" href="imagens/CAFE_little.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="artists.html">ARTISTS</a></li>
+            <li><a href="expositions.html">EXPOSITIONS</a></li>
+            <li><a href="tickets.html">TICKETS</a></li>
+        </ul>
+    </nav>
+</header>
+  
+  <div>
+  <img src="imagens/CAFE_logo2.png" alt="Logo 2" width="80">
+    <h1>CAFE - Centro de Arte e Fotografia Experimental</h1>
+    <h4>Buy your tickets here!</h4>
+  </div>
+  
+<form action="#>" method="post">
+
+      <input type="checkbox" id="expo1" name="expos">
+      <label for="expo1">Expo One</label>
+
+      <input type="checkbox" id="expo2" name="expos">
+      <label for="expo2">Expo Two</label>
+
+      <input type="checkbox" id="expo3" name="expos">
+      <label for="expo3">Expo Three</label>
+     
+      <input type="checkbox" id="expo4" name="expos">
+      <label for="expo4">Expo Four</label><br><br>
+  
+    <fieldset>
+        <legend><h3>Add your info</h3></legend>
+
+      <label for="n_tickets">How many tickets?</label>
+      <select id="n_tickets" name="n_tickets" required>
+            <option value="">Number of tickets</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+        </select><br><br>
+      
+        <label>Full Name: <input type="text" name="Name" required placeholder="John Doe"></label><br><br>
+      
+        <label>Date of Birth: <input type="date" name="dateofbirth"></label><br><br>
+      
+        <label>Email: <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label><br><br>
+      
+        <label> Phone: <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
+                              placeholder="351 910 890 331"></label><br>
+      
+        <div id="card_info">
+            <h3>Card Info</h3>
+            <label>Card Number: <input type="text" pattern="[0-9]{16}" 
+                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label><br><br>
+          
+            <label>Expiry Date: </label>
+
+            <select name="card_m" required>
+                <option value="">Month</option>
+                <option value="jan">January</option>
+                <option value="fev">February</option>
+                <option value="mar">March</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+
+            <select name="card_y" required>
+                <option value="">Year</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+            </select>
+
+            <label>CVV: <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
+        </div><br>
+      
+        <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  
+     <div><img src="imagens/grant-ritchie.jpg" alt="Building" width="482"></div>
+  
+    <footer>
+        <div id="find-us">
+            <h3>FIND US</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Universidade+de+Coimbra/@40.2089072,-8.4241509,15z/data=!4m5!3m4!1s0x0:0x2c4969e6ec176a72!8m2!3d40.2089072!4d-8.4241509"
+                           target="_blank">Universidade de Coimbra, Coimbra <br>CEP: 3000-350</a>
+                    </li>
+                    <li>
+                        <p>PHONE: <a href="tel:+351-910-890-331">+351 910 890 331</a></p>
+                    </li>
+                    <li>
+                        <p>EMAIL: <a href="mailto:lis.crivellari@gmail.com">lis.crivellari@gmail.com</a></p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menu">
+            <h3>MENU</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTISTS</a></li>
+                    <li><a href="expositions.html">EXPOSITIONS</a></li>
+                    <li><a href="tickets.html">TICKETS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="social-media">
+            <h3>SOCIAL MEDIA</h3>
+            <nav>
+                <ul>
+                    <li><a href="socialmedia.html" target="_blank">FACEBOOK</a></li>
+                    <li><a href="socialmedia.html" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="socialmedia.html" target="_blank">TWITTER</a></li>
+                    <li><a href="socialmedia.html" target="_blank">LINKEDIN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <img src="imagens/CAFE_logo.png" alt="CAFE Logo" width="250">
+        </div>
+    </footer>
+
+</body>
+</html>
