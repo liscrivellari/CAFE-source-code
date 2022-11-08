@@ -1,0 +1,22 @@
+* {
+    font-family: Degular, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: block;
+    position: sticky;
+    border: 5em;
+}
+
+header ul li{
+    display: inline-block;
+    text-align: center;
+    width: 20‰;
+
+}
+
+header>ul>li:last-child{
+    margin-right: 0;
+}
