@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>CAFE - Tickets</title>
   <link rel="icon" href="imagens/CAFE_little.png">
+  <link rel="stylesheet" href="https://use.typekit.net/yvc5bjl.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
 
     <div class="set-grid">
-
-        <div class="header">
-<header>
+<header class="header">
     <nav>
         <ul>
             <li><a href="index.html">HOME</a></li>
@@ -22,7 +21,6 @@
         </ul>
     </nav>
 </header>
-</div>
 
   <div>
   <img src="imagens/CAFE_logo2.png" alt="Logo 2" width="80">
@@ -30,7 +28,7 @@
     <h4>Buy your tickets here!</h4>
   </div>
   
-<form action="#>" method="post">
+<form action="#>" method="post" class="buy-tickets">
 
       <input type="checkbox" id="expo1" name="expos">
       <label for="expo1">Expo One</label>
@@ -45,7 +43,7 @@
       <label for="expo4">Expo Four</label><br><br>
   
     <fieldset>
-        <legend><h3>Add your info</h3></legend>
+        <legend><h3>Add your info</h3></legend><br>
 
       <label for="n_tickets">How many tickets?</label>
       <select id="n_tickets" name="n_tickets" required>
@@ -56,21 +54,21 @@
             <option value="four">4</option>
         </select><br><br>
       
-        <label>Full Name: <input type="text" name="Name" required placeholder="John Doe"></label><br><br>
+        <label id="name">Full Name* <input type="text" name="Name" required placeholder="John Doe"></label><br><br>
       
-        <label>Date of Birth: <input type="date" name="dateofbirth"></label><br><br>
+        <label id="birthday">Date of Birth <input type="date" name="dateofbirth"></label><br><br>
       
-        <label>Email: <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label><br><br>
+        <label id="email">Email* <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label><br><br>
       
-        <label> Phone: <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
+        <label id="phone"> Phone <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
                               placeholder="351 910 890 331"></label><br>
       
         <div id="card_info">
-            <h3>Card Info</h3>
-            <label>Card Number: <input type="text" pattern="[0-9]{16}" 
+            <h3>Card Info*</h3>
+            <label>Card Number <input type="text" pattern="[0-9]{16}" 
                                        placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label><br><br>
           
-            <label>Expiry Date: </label>
+            <label>Expiry Date </label>
 
             <select name="card_m" required>
                 <option value="">Month</option>
@@ -102,7 +100,7 @@
                 <option value="2033">2033</option>
             </select>
 
-            <label>CVV: <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
+            <label>CVV <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
         </div><br>
       
         <input type="submit" value="Submit">
