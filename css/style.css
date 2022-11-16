@@ -142,17 +142,30 @@ img[alt~="Building"]{
     padding: 0;
 }
   
-  input{
+  input, select{
     background-color: black;
     display: inline-block;
     position: absolute;
-    left: 150px;
+    left: 170px;
     color: white;
     width: 25%;
   }
 
+  select{
+    appearance: none;
+    width: 20em;
+    height: 2.2em;
+    align-self: stretch;
+    font-family: inherit;
+    border: 1px solid white;
+    transform: translateY(0.1em);
+    border-radius: 0;
+  }
+
+
 #n_tickets, #name, #birthday, 
-#email, #phone{
+#email, #phone, #n_tickets{
+    text-transform: uppercase;
     display: inline-block;
     padding: 20px;
     border: 1px solid white;

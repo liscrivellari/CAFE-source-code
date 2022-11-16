@@ -48,20 +48,20 @@
     <fieldset class="form-tickets">
         <!-- <legend><h3>Add your info</h3></legend><br> -->
 
-      <label for="n_tickets">How many tickets?</label>
-      <select id="n_tickets" name="n_tickets" required>
+      <label id="n_tickets">How many tickets?
+      <select name="n_tickets" required>
             <option value="">Number of tickets</option>
             <option value="one">1</option>
             <option value="two">2</option>
             <option value="three">3</option>
             <option value="four">4</option>
-        </select><br><br>
+        </select></label>
       
-        <label id="name">Full Name* <input type="text" name="Name" required placeholder="John Doe"></label><br><br>
+        <label id="name">Full Name* <input type="text" name="Name" required placeholder="John Doe"></label>
       
-        <label id="birthday">Date of Birth <input type="date" name="dateofbirth"></label><br><br>
+        <label id="birthday">Date of Birth <input type="date" name="dateofbirth"></label>
       
-        <label id="email">Email* <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label><br><br>
+        <label id="email">Email* <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label>
       
         <label id="phone"> Phone <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
                               placeholder="351 910 890 331"></label><br>
@@ -69,7 +69,7 @@
         <div id="card_info">
             <h3>Card Info*</h3>
             <label>Card Number <input type="text" pattern="[0-9]{16}" 
-                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label><br><br>
+                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label>
           
             <label>Expiry Date </label>
 
@@ -104,7 +104,7 @@
             </select>
 
             <label>CVV <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
-        </div><br>
+        </div>
       
         <div class="btn"><button type="submit" value="Submit">Submit</div>
     </fieldset>
