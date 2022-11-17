@@ -13,13 +13,18 @@ html{
 
 body{
     background-color: black;
+    font-size: 1.3vw;
 }
 
 h1{
     font-size: 2.5em;
 }
 
+
+
 /* ------- HEADER & FOOTER ------- -*/
+
+
 
 header{
     display: flexbox;
@@ -156,7 +161,11 @@ a:active{ color: white; }
     margin-left: 70px;
 }
 
+
+
 /* ------- TICKETS/FORM ------- -*/
+
+
 
 .checkme{ 
     display: flex;
@@ -234,7 +243,11 @@ img[alt~="Building"]{
     flex-grow: 10;
 }
 
+
+
 /* ------- ARTISTS ------- -*/
+
+
 
 .artist-pics{
     display: grid;
@@ -315,7 +328,12 @@ figcaption{
     grid-row: 15/18;
 }
 
+
+
 /* ------- INDEX/HOMEPAGE ------- -*/
+
+
+
 
 .abovefold{
     display: flex;
@@ -376,16 +394,6 @@ video{
     z-index: -1;
 
 }
-
-/* #thevideo{
-    padding: inherit;
-    margin: 0;
-    position: relative;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-    grid-column: 1/7;
-} */
 
 .aboutus{
     background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
@@ -465,6 +473,11 @@ video{
     text-align: center;
     grid-column: 4/6;
     grid-row: 1/2;
+}
+
+.comments p{
+    position: relative;
+    vertical-align: middle;
 }
 
 #c1, #c2, #c3, #c4{
@@ -548,4 +561,36 @@ video{
 
 #comment_b:hover{
     transform: scale(1.2);
+}
+
+
+
+/* ------- EXPOSITIONS ------- -*/
+
+
+
+.expositions{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: repeat(20, 5vw);
+    grid-gap: 2em;
+}
+
+.expositions h1{
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: italic;
+}
+
+.expositions img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#ex1{
+    grid-column: 3/5;
+    grid-row: 2/4;
 }
