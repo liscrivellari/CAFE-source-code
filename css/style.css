@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     font-family: Degular, sans-serif;
     color: white;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -18,6 +19,8 @@ body{
 h1{
     font-size: 2.5em;
 }
+
+/* ------- HEADER & FOOTER ------- -*/
 
 header{
     display: flexbox;
@@ -117,6 +120,8 @@ header nav ul li a:visited{ color: #eee; }
 
 a:active{ color: white; }
 
+/* ------- TICKETS ------- -*/
+
 .tickets{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -151,6 +156,8 @@ a:active{ color: white; }
     margin: 0;
     margin-left: 70px;
 }
+
+/* ------- TICKETS/FORM ------- -*/
 
 .checkme{ 
     display: flex;
@@ -228,6 +235,8 @@ img[alt~="Building"]{
     flex-grow: 10;
 }
 
+/* ------- ARTISTS ------- -*/
+
 .artist-pics{
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
@@ -254,7 +263,6 @@ figcaption{
 }
 
 .artist-pics img{
-    /* clip-path: inset(645px 430px); */
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -267,7 +275,6 @@ figcaption{
     background-color: black;
     opacity: 50%;
 }
-
 
 #sprat{
     grid-column: 2/4;
@@ -294,10 +301,6 @@ figcaption{
     grid-row: 10/15;
 }
 
-/* #piwnicki p, #golovesov p{
-    bottom: 375px;
-} */
-
 #steiner{
     grid-column: 2/4;
     grid-row: 11/15;
@@ -312,5 +315,52 @@ figcaption{
     grid-column: 2/4;
     grid-row: 15/18;
 }
+
+/* ------- INDEX/HOMEPAGE ------- -*/
+
+.abovefold{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo{
+    display: inline-block;
+    margin: 0;
+    color:black;
+    z-index: 7;
+    mix-blend-mode: multiply;
+}
+
+.titulo h1{
+    font-size: 9em !important;
+}
+
+.titulo h1, .titulo h2{
+    display: inline-block;
+    position: relative;
+    left: 70px;
+    mix-blend-mode: color-dodge;
+    font-size: 3em;
+    z-index: 1;
+}
+
+video{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* #thevideo{
+    padding: inherit;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+    grid-column: 1/7;
+} */
 
 
