@@ -22,7 +22,7 @@ h1{
 
 
 
-/* ------- HEADER & FOOTER ------- -*/
+/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 
 
 
@@ -163,7 +163,7 @@ a:active{ color: white; }
 
 
 
-/* ------- TICKETS/FORM ------- -*/
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 
 
 
@@ -261,6 +261,14 @@ img[alt~="Building"]{
     right: 25%;
     grid-column: 2/4;
     grid-row: 2/4;
+    opacity: 50%;
+}
+
+#build{
+    position: relative;
+    bottom: 25px;
+    grid-column: 7/13;
+    grid-row: 1/10;
 }
 
 .tickets h1, .tickets h4{
@@ -283,14 +291,24 @@ img[alt~="Building"]{
     font-style: italic;
 }
 
-
 .buy-tickets{
-    grid-row-start: 12;
+    grid-column: 2/7;
+    grid-row: 4/10;
+}
+
+.checkme{
+    position: relative;
+    top: 30px;
+    align-items: center;
+    grid-column: 2/7;
+    grid-row: 4/6;
 }
 
 
 
-/* ------- ARTISTS ------- -*/
+
+
+/* ------------------------------------------  ARTISTS ------------------------------------------ */
 
 
 
@@ -373,7 +391,7 @@ figcaption{
 
 
 
-/* ------- INDEX/HOMEPAGE ------- -*/
+/* ------------------------------------------  INDEX/HOMEPAGE ------------------------------------------ */
 
 
 
@@ -608,7 +626,7 @@ video{
 
 
 
-/* ------- EXPOSITIONS ------- -*/
+/* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
 
 
 
