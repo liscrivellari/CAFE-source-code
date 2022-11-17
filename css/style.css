@@ -572,7 +572,7 @@ video{
 .expositions{
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
-    grid-template-rows: repeat(30, 5vw);
+    grid-template-rows: repeat(26, 5vw);
     grid-gap: 2em;
 }
 
@@ -590,6 +590,7 @@ video{
 }
 
 .expositions h3{
+    text-transform: uppercase;
     position: relative;
     bottom: 20%;
 }
