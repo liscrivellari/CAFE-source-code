@@ -278,13 +278,11 @@ figcaption{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border: var(--borda);
     transition: var(--trans);
 }
 
 .artist-pics img:hover{
-    font-size: 1.3em;
-    background-color: black;
+    transform: scale(1.1);
     opacity: 50%;
 }
 
@@ -300,7 +298,7 @@ figcaption{
 
 #golovesov{
     grid-column: 2/4;
-    grid-row: 6/11;
+    grid-row: 6/12;
 }
 
 #dittrich{
@@ -310,22 +308,22 @@ figcaption{
 
 #piwnicki{
     grid-column: 4/6;
-    grid-row: 10/15;
+    grid-row: 10/16;
 }
 
 #steiner{
     grid-column: 2/4;
-    grid-row: 11/15;
+    grid-row: 12/16;
 }
 
 #ivanov{
     grid-column: 4/6;
-    grid-row: 15/18;
+    grid-row: 16/20;
 }
 
 #hasselmann{
     grid-column: 2/4;
-    grid-row: 15/18;
+    grid-row: 16/20;
 }
 
 
