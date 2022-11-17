@@ -227,8 +227,61 @@ img[alt~="Building"]{
     flex-grow: 10;
 }
 
-/* .artist-pics{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
+.artist-pics{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: repeat(20, 5vw);
+    grid-gap: 2em;
+}
+
+figure{
+    margin: 0;
+}
+
+.artist-pics img{
+    /* clip-path: inset(645px 430px); */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 0.5px solid white;
+}
+
+#sprat{
+    grid-column: 2/4;
+    grid-row: 2/6;
+}
+
+#polyanskaya{
+    grid-column: 4/6;
+    grid-row: 2/6;
+}
+
+#golovesov{
+    grid-column: 2/4;
+    grid-row: 6/11;
+}
+
+#dittrich{
+    grid-column: 4/6;
+    grid-row: 6/10;
+}
+
+#piwnicki{
+    grid-column: 4/6;
+    grid-row: 10/15;
+}
+
+#steiner{
+    grid-column: 2/4;
+    grid-row: 11/15;
+}
+
+#ivanov{
+    grid-column: 4/6;
+    grid-row: 15/18;
+}
+
+#hasselmann{
+    grid-column: 2/4;
+    grid-row: 15/18;
+}
