@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     font-family: Degular, sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -26,7 +27,7 @@ header{
     left: 0;
     right: 0;
     position: fixed;
-    /* grid-area: 1,13; */
+    z-index: 20;
 }
 header nav ul{
     display: grid;
@@ -236,6 +237,20 @@ img[alt~="Building"]{
 
 figure{
     margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+figcaption{
+    position: relative;
+    left: 40px;
+    bottom: 60px;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
+    z-index: 1;
+    transition: 0.5s ease;
+
 }
 
 .artist-pics img{
@@ -244,7 +259,15 @@ figure{
     height: 100%;
     object-fit: contain;
     border: 0.5px solid white;
+    transition: 0.5s ease;
 }
+
+.artist-pics img:hover{
+    font-size: 1.3em;
+    background-color: black;
+    opacity: 50%;
+}
+
 
 #sprat{
     grid-column: 2/4;
@@ -271,6 +294,10 @@ figure{
     grid-row: 10/15;
 }
 
+/* #piwnicki p, #golovesov p{
+    bottom: 375px;
+} */
+
 #steiner{
     grid-column: 2/4;
     grid-row: 11/15;
@@ -285,3 +312,5 @@ figure{
     grid-column: 2/4;
     grid-row: 15/18;
 }
+
+
