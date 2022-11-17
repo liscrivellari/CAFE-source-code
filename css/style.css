@@ -1,5 +1,6 @@
 :root{
     --borda: 0.5px solid white;
+    --trans: 0.5s ease;
 }
 
 html{
@@ -177,7 +178,7 @@ a:active{ color: white; }
     border: var(--borda);
     border-radius: 2px;
     transform: translateY(0.3em);
-    transition: 0.5s;
+    transition: var(--trans);
 }
 
 
@@ -262,7 +263,7 @@ figcaption{
     font-style: italic;
     font-weight: 400;
     z-index: 1;
-    transition: 0.5s ease;
+    transition: var(--trans);
 
 }
 
@@ -271,7 +272,7 @@ figcaption{
     height: 100%;
     object-fit: contain;
     border: var(--borda);
-    transition: 0.5s ease;
+    transition: var(--trans);
 }
 
 .artist-pics img:hover{
@@ -428,7 +429,7 @@ video{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: transform 0.5s ease;
+    transition: transform var(--trans);
 }
 
 .aboutus img:hover{
@@ -478,7 +479,7 @@ video{
     margin: -2px;
     border: var(--borda);
     text-align: center;
-    transition: 0.5s ease;
+    transition: var(--trans);
 }
 
 .comments p:hover{
@@ -506,16 +507,52 @@ video{
     grid-row: 5/7;
 }
 
+.comments form{
+    position: relative;
+    grid-column: 3/7;
+    grid-row: 7/9;
+}
 #comment{
+    display: inline-block;
+    position: relative;
+    max-width: 70%;
+    max-height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     appearance: none;
     color: inherit;
     font-family: inherit;
-    width: 40%;
-    height: 100px;
     padding: 10px;
     background-color: black;
     border: var(--borda);
+    transition: var(--trans);
+} 
+
+#comment:hover{
+    background-color: white;
+    color: black;
 }
 
+#comment_b{
+    appearance: none;
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    height: 2em;
+    background-color: white;
+    color: black;
+    border: var(--borda);
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 40%;
+    transition: var(--trans);
+    grid-column: 3/7;
+    grid-row: 7/9;
+}
 
-
+#comment_b:hover{
+    transform: scale(1.2);
+    
+}
