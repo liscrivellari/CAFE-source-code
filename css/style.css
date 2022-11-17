@@ -226,3 +226,9 @@ img[alt~="Building"]{
     position: relative;
     flex-grow: 10;
 }
+
+/* .artist-pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
