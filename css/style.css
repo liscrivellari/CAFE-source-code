@@ -30,7 +30,7 @@ h1{
 
 
 
-header{
+/* header{
     display: inline-block;
     margin: 0;
     position: fixed;
@@ -71,40 +71,10 @@ header nav ul li a{
 }
 .burguer .dot{
     line-height: 10px;
-}
-
-    /* .burguer{
-        display: inline-block;
-        position: absolute;
-        padding: 0.9em;
-        width: 0.4vw;
-        height: 5px;
-        top: 5px;
-        right: 0px;
-        cursor: pointer;
-    }
+} */
 
 
-    .dot{
-        display: inline-block;
-        position: relative;
-        background-color: white;
-        width: 0.2vw;
-        height: 0.2vw;
-        bottom: 0.7vw;
-        border-radius: 20px;
-    }
-    
-    .dot2, .dot3{
-        bottom: 10px;
-    }
-
-    .dot3{
-        bottom: 20px;
-    } */
-
-
-/* header{
+header{
     display: flexbox;
     border-bottom: var(--borda);
     background-color: rgba(0, 0, 0, 0.5);
@@ -142,8 +112,11 @@ header nav ul li a::after{
     left: 0;
     bottom: 0;
     transition: 0.3s ease;
-} */
+}
 
+#menu-click, .burguer{
+    display: none;
+}
 
 footer{
     display: grid;
@@ -199,38 +172,39 @@ header nav ul li a:hover::after{ transform: scale(1,1); }
 
 header nav ul li a:visited{ color: #eee; }
 
-
 a:active{ color: white; }
+
+
+/* #menu-click, .burguer{
+    display: none;
+} */
+
+#menu-click{
+    appearance: none;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    z-index: 1;
+    margin: 20px;
+
+}
+
+#menuicon, #menuicon_close{
+    position: absolute;
+    margin: 20px;
+    right: 0;
+}
+
+#menu-click:checked{
+    background-color: white;
+    opacity: 50%;
+}
 
 #socialmedia_link{
     color: white;
 }
-
-
-    
-    /* .burguer{
-        padding: 0.9em;
-        width: 0.4vw;
-        height: 1.4vw;
-    }
-    .dot{
-        display: inline-block;
-        position: absolute;
-        background-color: white;
-        width: 0.3vw;
-        height: 0.3vw ;
-        bottom: 0.7vw;
-        border-radius: 20px;
-    }
-    
-    .dot2{
-        bottom: 1.6vw;
-    }
-    
-    .dot3{
-        bottom: 2.6vw;
-    }
- */
 
 
 
@@ -928,12 +902,13 @@ figcaption{
 /* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
 
 
+@media screen and (max-width: 700px) {
+    
+    #menu-click, .burguer{
+        display: inline-block;
+    }
 
-
-
-
-
-
+}
 
 
 
