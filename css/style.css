@@ -126,6 +126,10 @@ header nav ul li a:visited{ color: #eee; }
 
 a:active{ color: white; }
 
+#socialmedia_link{
+    color: white;
+}
+
 
 
 
