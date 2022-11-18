@@ -40,7 +40,7 @@ header{
     z-index: 20;
 }
 
-header nav ul{
+header nav #navheader{
     position: fixed;
     top: 4vh;
     right: 0;
@@ -63,7 +63,17 @@ header nav ul li a{
     padding: 1vw;
 }
 
-    .burguer{
+.burguer ul{
+    margin: 0px;
+    background-color: blue;
+    padding: 20px;
+    border: 0px;
+}
+.burguer .dot{
+    line-height: 10px;
+}
+
+    /* .burguer{
         display: inline-block;
         position: absolute;
         padding: 0.9em;
@@ -73,32 +83,25 @@ header nav ul li a{
         right: 0px;
         cursor: pointer;
     }
+
+
     .dot{
         display: inline-block;
         position: relative;
         background-color: white;
         width: 0.2vw;
         height: 0.2vw;
-        /* bottom: 0.7vw; */
+        bottom: 0.7vw;
         border-radius: 20px;
     }
     
-    /* .dot2, .dot3{
+    .dot2, .dot3{
         bottom: 10px;
     }
 
     .dot3{
         bottom: 20px;
     } */
-
-.burguer:active {
-    background-color: blue;
-}
-
-.burguer.parent:hover {
-    background-color: blue;
-}
-
 
 
 /* header{
