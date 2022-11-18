@@ -22,13 +22,88 @@ h1{
 
 
 
-/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
-/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
-/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 
-
+/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
+/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
+/* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 
 header{
+    display: inline-block;
+    margin: 0;
+    position: fixed;
+    /* width: 150px;
+    height: 150px; */
+    top: 20px;
+    right: 0px;
+    border: var(--borda);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
+}
+
+header nav ul{
+    position: fixed;
+    top: 4vh;
+    right: 0;
+    text-align: right;
+    list-style: none;
+    float: right;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: var(--borda);
+    border-right: 0px;
+    /* border-left: var(--borda);
+    border-bottom: var(--borda); */
+    padding: 2vw;
+    z-index: 8;
+
+}
+
+header nav ul li a{
+    line-height: 2em;
+    text-decoration: none;
+    list-style: none;
+    padding: 2vw;
+}
+
+    .burguer{
+        display: inline-block;
+        position: absolute;
+        padding: 0.9em;
+        width: 0.4vw;
+        height: 5px;
+        top: 5px;
+        right: 0px;
+        cursor: pointer;
+    }
+    .dot{
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        width: 0.2vw;
+        height: 0.2vw;
+        /* bottom: 0.7vw; */
+        border-radius: 20px;
+    }
+    
+    /* .dot2, .dot3{
+        bottom: 10px;
+    }
+
+    .dot3{
+        bottom: 20px;
+    } */
+
+.burguer:active {
+    background-color: blue;
+}
+
+.burguer.parent:hover {
+    background-color: blue;
+}
+
+
+
+/* header{
     display: flexbox;
     border-bottom: var(--borda);
     background-color: rgba(0, 0, 0, 0.5);
@@ -66,7 +141,7 @@ header nav ul li a::after{
     left: 0;
     bottom: 0;
     transition: 0.3s ease;
-}
+} */
 
 
 footer{
@@ -129,6 +204,32 @@ a:active{ color: white; }
 #socialmedia_link{
     color: white;
 }
+
+
+    
+    /* .burguer{
+        padding: 0.9em;
+        width: 0.4vw;
+        height: 1.4vw;
+    }
+    .dot{
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        width: 0.3vw;
+        height: 0.3vw ;
+        bottom: 0.7vw;
+        border-radius: 20px;
+    }
+    
+    .dot2{
+        bottom: 1.6vw;
+    }
+    
+    .dot3{
+        bottom: 2.6vw;
+    }
+ */
 
 
 
@@ -201,7 +302,7 @@ video{
 }
 
 .aboutus{
-    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
+    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);
     background-size: 100vw;
     display: grid;
     grid-template-columns: 5% 1fr 15% 1fr 5%;
@@ -340,7 +441,7 @@ video{
     background-color: black;
     border: var(--borda);
     transition: var(--trans);
-} 
+}
 
 #comment:hover{
     background-color: white;
@@ -663,11 +764,6 @@ figcaption{
     grid-row: 4/10;
 }
 
-
-/* ----------------------------------- CORRECT THIS ----------------------------------- */
-/* ----------------------------------- CORRECT THIS ----------------------------------- */
-
-
 .checkme{
     display: inline-block;
     position: relative;
@@ -822,3 +918,39 @@ figcaption{
     transform: scale(1.2);
     cursor: pointer;
 }
+
+
+
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+
+
+/* @media screen and (min-width: 412px) {
+    
+    .burguer{
+        padding: 0.9em;
+        width: 0.4vw;
+        height: 2vw;
+    }
+    .dot{
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        width: 0.3vw;
+        height: 0.3vw ;
+        bottom: 0.7vw;
+        border-radius: 20px;
+    }
+    
+    .dot2{
+        bottom: 1.4vw;
+    }
+    
+    .dot3{
+        bottom: 2.1vw;
+    }
+
+} */
+
