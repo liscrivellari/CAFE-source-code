@@ -822,3 +822,54 @@ figcaption{
     transform: scale(1.2);
     cursor: pointer;
 }
+
+
+
+/* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
+/* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
+/* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
+/* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
+
+
+
+
+/* .aboutus{
+    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
+    background-size: 100vw;
+    display: grid;
+    grid-template-columns: 5% 1fr 15% 1fr 5%;
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 2em;
+} */
+
+
+/* .comments{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 2em;
+} */
+
+
+/* .artist-pics{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: repeat(20, 5vw);
+    grid-gap: 2em;
+} */
+
+
+/* .expositions{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: repeat(26, 5vw);
+    grid-gap: 2em;
+} */
+
+
+/* .tickets{
+    display: grid;
+    grid-template-columns: 5% repeat(10, 1fr) 5%;
+    grid-template-rows: repeat(10, 5vw);
+    grid-gap: 2em;
+} */
