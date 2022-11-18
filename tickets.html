@@ -46,32 +46,35 @@
     <fieldset class="form-tickets">
         <!-- <legend><h3>Add your info</h3></legend><br> -->
 
-      <label id="n_tickets">How many tickets?
-      <select name="n_tickets" required>
+      <label id="n_tickets">How many tickets?</label>
+      <select id="i_n_tickets" name="n_tickets" required>
             <option value="">Number of tickets</option>
             <option value="one">1</option>
             <option value="two">2</option>
             <option value="three">3</option>
             <option value="four">4</option>
-        </select></label>
+        </select>
       
-        <label id="name">Full Name* <input type="text" name="Name" required placeholder="John Doe"></label>
+        <label id="name">Full Name* </label>
+        <input type="text" name="Name" required placeholder="John Doe">
       
-        <label id="birthday">Date of Birth <input type="date" name="dateofbirth"></label>
+        <label id="birthday">Date of Birth </label>
+        <input type="date" name="dateofbirth">
+        
+        <label id="email">Email* </label>
+        <input type="email" name="mail" placeholder="johndoe@gmail.com" required>
       
-        <label id="email">Email* <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label>
+        <label id="phone"> Phone </label>
+        <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
+                              placeholder="351 910 890 331">
       
-        <label id="phone"> Phone <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
-                              placeholder="351 910 890 331"></label><br>
-      
-        <div id="card_info">
-            <h3>Card Info*</h3>
-            <label>Card Number <input type="text" pattern="[0-9]{16}" 
-                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label>
+            <label id="card-n">Card Number </label>
+            <input type="text" pattern="[0-9]{16}" 
+                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
           
-            <label>Expiry Date </label>
+            <label id="card-date">Expiry Date </label>
 
-            <select name="card_m" required>
+            <select id="card_m" name="card_m" required>
                 <option value="">Month</option>
                 <option value="jan">January</option>
                 <option value="fev">February</option>
@@ -87,7 +90,7 @@
                 <option value="dec">December</option>
             </select>
 
-            <select name="card_y" required>
+            <select id="card_y" name="card_y" required>
                 <option value="">Year</option>
                 <option value="2024">2024</option>
                 <option value="2025">2025</option>
@@ -101,10 +104,11 @@
                 <option value="2033">2033</option>
             </select>
 
-            <label>CVV <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
-        </div>
+            <label id="cvv">CVV </label>
+            <input id="i_cvv" type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
+
       
-        <div class="btn"><button type="submit" value="Submit">Submit</div>
+            <div><button id="form_b" type="submit" value="Submit">Submit</div>
     </fieldset>
   </form>
   
