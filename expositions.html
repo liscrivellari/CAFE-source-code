@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAFE - Expositions</title>
-  <link rel="icon" href="imagens/CAFE_little.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="imagens/CAFE_little.png">
+    <link rel="stylesheet" href="https://use.typekit.net/yvc5bjl.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
+
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="artists.html">ARTISTS</a></li>
-            <li><a href="expositions.html">EXPOSITIONS</a></li>
-            <li><a href="tickets.html">TICKETS</a></li>
-        </ul>
-    </nav>
-</header>
-
-<footer>
-    <div id="find-us">
-        <h3>FIND US</h3>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.google.com/maps/place/Universidade+de+Coimbra/@40.2089072,-8.4241509,15z/data=!4m5!3m4!1s0x0:0x2c4969e6ec176a72!8m2!3d40.2089072!4d-8.4241509"
-                       target="_blank">Universidade de Coimbra, Coimbra <br>CEP: 3000-350</a>
-                </li>
-                <li>
-                    <p>PHONE: <a href="tel:+351-910-890-331">+351 910 890 331</a></p>
-                </li>
-                <li>
-                    <p>EMAIL: <a href="mailto:lis.crivellari@gmail.com">lis.crivellari@gmail.com</a></p>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div id="menu">
-        <h3>MENU</h3>
-        <nav>
+    <header class="header1">
+        
+        <nav class="navheader">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="artists.html">ARTISTS</a></li>
@@ -48,24 +22,125 @@
                 <li><a href="tickets.html">TICKETS</a></li>
             </ul>
         </nav>
-    </div>
 
-    <div id="social-media">
-        <h3>SOCIAL MEDIA</h3>
-        <nav>
+    </header>
+    <header class="header2">
+
+        <input type="checkbox" name="menu" id="menu-click">
+        <div class="burguer">
             <ul>
-                <li><a href="socialmedia.html" target="_blank">FACEBOOK</a></li>
-                <li><a href="socialmedia.html" target="_blank">INSTAGRAM</a></li>
-                <li><a href="socialmedia.html" target="_blank">TWITTER</a></li>
-                <li><a href="socialmedia.html" target="_blank">LINKEDIN</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="expositions.html">EXPOSITIONS</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
 
-    <div>
-        <img src="imagens/CAFE_logo.png" alt="CAFE Logo" width="250">
+        <img id="menuicon" src="imagens/menuicon.svg" alt="Burguer Menu">
+        <img id="menuicon_close" src="imagens/menuicon_close.svg" alt=" Close Burguer Menu ">
+    </header>
+
+    <div class="expositions">
+    <div class="marek">
+        <h1>MAREK PIWNICKI</h1>
+        <p>20/11 - 24/11</p>
     </div>
-</footer>
+        <img id="ex1" src="imagens/marek-piwnicki-2.jpg" alt="marek-piwnicki" width="500px">
+        <img id="ex2" src="imagens/wolfgang-hasselmann.jpg" alt="wolfgang-hasselmann" width="500px">
+        <h3 id="-marek">Lorem ipsum dolor sit</h3>
+        <p id="marek">Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?
+        Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?</p>
+
+
+    <div class="peter">
+        <h1>PETER STEINER</h1>
+        <p>20/11 - 24/11</p>
+    </div>
+        <img id="ex3" src="imagens/peter-steiner.jpg" alt="peter-steiner" width="500px">
+        <img id="ex4" src="imagens/liza-polyanskaya.jpg" alt="liza-polyanskaya" width="500px">
+        <h3 id="-peter">Lorem ipsum dolor sit</h3>
+        <p id="peter">Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?
+        Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?</p>
+
+
+    <div class="velizar">
+    <h1>VELIZAR  IVANOV</h1>
+    <p>20/11 - 24/11</p>
+</div>
+    <img id="ex5" src="imagens/velizar-ivanov.jpg" alt="velizar-ivanov" width="500px">
+    <img id="ex6" src="imagens/bernd-dittrich.jpg" alt="eugene-golovesov" width="500px">
+    <h3 id="-velizar">Lorem ipsum dolor sit</h3>
+    <p id="velizar">Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+    veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?
+    Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+    veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?</p>
+
+
+<div class="bernd">
+        <h1>BERND DITTRICH</h1>
+        <p>20/11 - 24/11</p>
+    </div>
+        <img id="ex7" src="imagens/bernd-dittrich-2.jpg" alt="bernd-dittrich-2" width="500px">
+        <img id="ex8"src="imagens/roman-malik.jpg" alt="roman-malik" width="500px">
+        <h3 id="-bernd">Lorem ipsum dolor sit</h3>
+        <p id="bernd">Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?
+        Amet consectetur adipisicing elit. Explicabo odit eos pariatur! Possimus, eius iure. Ut consequuntur voluptas
+        veritatis, fugiat quos voluptatibus excepturi! Quo corporis accusamus nobis minus aliquid odit?</p>
+
+</div>
+    <footer>
+        <div id="find-us">
+            <h3>FIND US</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Universidade+de+Coimbra/@40.2089072,-8.4241509,15z/data=!4m5!3m4!1s0x0:0x2c4969e6ec176a72!8m2!3d40.2089072!4d-8.4241509"
+                            target="_blank">Universidade de Coimbra, Coimbra <br>CEP: 3000-350</a>
+                    </li>
+                    <li>
+                        <p>PHONE: <a href="tel:+351-910-890-331">+351 910 890 331</a></p>
+                    </li>
+                    <li>
+                        <p>EMAIL: <a href="mailto:lis.crivellari@gmail.com">lis.crivellari@gmail.com</a></p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menu">
+            <h3>MENU</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="artists.html">ARTISTS</a></li>
+                    <li><a href="expositions.html">EXPOSITIONS</a></li>
+                    <li><a href="tickets.html">TICKETS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="social-media">
+            <h3>SOCIAL MEDIA</h3>
+            <nav>
+                <ul>
+                    <li><a href="socialmedia.html" target="_blank">FACEBOOK</a></li>
+                    <li><a href="socialmedia.html" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="socialmedia.html" target="_blank">TWITTER</a></li>
+                    <li><a href="socialmedia.html" target="_blank">LINKEDIN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <img src="imagens/CAFE_logo.png" alt="CAFE Logo" width="250">
+        </div>
+    </footer>
 
 </body>
+
 </html>

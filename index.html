@@ -2,23 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAFE - Centro de Arte e Fotografia Experimental</title>
   <link rel="icon" href="imagens/CAFE_little.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/yvc5bjl.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="artists.html">ARTISTS</a></li>
-            <li><a href="expositions.html">EXPOSITIONS</a></li>
-            <li><a href="tickets.html">TICKETS</a></li>
-        </ul>
-    </nav>
-</header>
 
+    <header class="header1">
+        
+        <nav class="navheader">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="expositions.html">EXPOSITIONS</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <header class="header2">
+
+        <input type="checkbox" name="menu" id="menu-click">
+        <div class="burguer">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="expositions.html">EXPOSITIONS</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </div>
+
+        <img id="menuicon" src="imagens/menuicon.svg" alt="Burguer Menu">
+        <img id="menuicon_close" src="imagens/menuicon_close.svg" alt=" Close Burguer Menu ">
+    </header>
+ 
+<div class="abovefold">
+<div class="titulo">
+    <h1>CAFE</h1>
+    <h2>Centro de Arte e <br>Fotografia Experimental</h2>
+  </div>
+  <div class="gradient" id="g1"></div>
+    <!-- <img src="imagens/play.png"> -->
+    <div class="myvideo">
+    <video src="video/CAFE.mp4" playsinline preload autoplay muted loop></video>
+   </div>
+</div>
+  
+    <div class="aboutus">
+  <h1 id="abtus">About Us</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est sequi quis, repellat maxime et atque facere minima, reiciendis fuga eaque velit aperiam laborum veritatis, tempora architecto? Vero labore suscipit corrupti pariatur, molestiae amet necessitatibus unde sed quis atque officiis asperiores magnam obcaecati voluptatibus temporibus debitis mollitia aspernatur illum, deleniti rerum quaerat numquam! Eligendi omnis distinctio molestias id reprehenderit voluptate officiis velit esse ipsa quas dolore sed nihil aliquam et, tempore vel atque nisi odit explicabo deserunt. Corrupti, dolore voluptatibus!</p>
+<div id="imgbox"></div>
+<div class="gradient" id="g2"></div>
+<img id="img1" src="imagens/bernd-dittrich-2.jpg" width=500px height="500px">
+          <img id="img2" src="imagens/bernd-dittrich.jpg"width=500px height="500px">
+             <img id="img3" src="imagens/roman-malik.jpg"width=500px height="500px">
+</div>
+
+  
+    <div class="comments">
+      <h1>Comments</h1>
+      <p id="c1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos deserunt laborum vitae eligendi iure fuga dolor officia tenetur. Quos, sunt?</p>
+      <p id="c2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sequi doloremque nihil accusantium et. Reprehenderit aliquam eos suscipit enim cumque.</p>
+      <p id="c3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor magni quos numquam vitae dolorem officia deleniti fuga magnam dicta!</p>
+      <p id="c4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, reiciendis laboriosam facilis provident aliquam repellat ipsa deserunt corporis voluptates quam.</p>
+      <form action="#" method="GET">
+        <textarea id="comment" placeholder="Add a comment... (you can resize me :) )"></textarea>
+        <input type="submit" id="comment_b">
+    </form>
+  
+    </div>
+    
 <footer>
     <div id="find-us">
         <h3>FIND US</h3>

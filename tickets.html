@@ -2,31 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAFE - Tickets</title>
   <link rel="icon" href="imagens/CAFE_little.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/yvc5bjl.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="artists.html">ARTISTS</a></li>
-            <li><a href="expositions.html">EXPOSITIONS</a></li>
-            <li><a href="tickets.html">TICKETS</a></li>
-        </ul>
-    </nav>
-</header>
-  
-  <div>
-  <img src="imagens/CAFE_logo2.png" alt="Logo 2" width="80">
-    <h1>CAFE - Centro de Arte e Fotografia Experimental</h1>
-    <h4>Buy your tickets here!</h4>
-  </div>
-  
-<form action="#>" method="post">
 
+    <header class="header1">
+        
+        <nav class="navheader">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="expositions.html">EXPOSITIONS</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <header class="header2">
+
+        <input type="checkbox" name="menu" id="menu-click">
+        <div class="burguer">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="expositions.html">EXPOSITIONS</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </div>
+
+        <img id="menuicon" src="imagens/menuicon.svg" alt="Burguer Menu">
+        <img id="menuicon_close" src="imagens/menuicon_close.svg" alt=" Close Burguer Menu ">
+    </header>
+
+<section class="tickets">
+  <img id="logo" src="imagens/CAFE_opc.png" alt="Logo 2" width="80">
+    <h1 id="cafe_h1">CAFE - Centro de Arte e Fotografia Experimental</h1><br>
+    <h4 id="cafe_h4">Buy your tickets here!</h4>
+  
+<form action="#>" method="post" class="buy-tickets">
+
+    <div class="checkme">
       <input type="checkbox" id="expo1" name="expos">
       <label for="expo1">Expo One</label>
 
@@ -38,36 +58,40 @@
      
       <input type="checkbox" id="expo4" name="expos">
       <label for="expo4">Expo Four</label><br><br>
+    </div>
   
-    <fieldset>
-        <legend><h3>Add your info</h3></legend>
+    <fieldset class="form-tickets">
+        <!-- <legend><h3>Add your info</h3></legend><br> -->
 
-      <label for="n_tickets">How many tickets?</label>
-      <select id="n_tickets" name="n_tickets" required>
+      <label id="n_tickets">How many tickets?</label>
+      <select id="i_n_tickets" name="n_tickets" required>
             <option value="">Number of tickets</option>
             <option value="one">1</option>
             <option value="two">2</option>
             <option value="three">3</option>
             <option value="four">4</option>
-        </select><br><br>
+        </select>
       
-        <label>Full Name: <input type="text" name="Name" required placeholder="John Doe"></label><br><br>
+        <label id="name">Full Name* </label>
+        <input type="text" name="Name" required placeholder="John Doe">
       
-        <label>Date of Birth: <input type="date" name="dateofbirth"></label><br><br>
+        <label id="birthday">Date of Birth </label>
+        <input type="date" name="dateofbirth">
+        
+        <label id="email">Email* </label>
+        <input type="email" name="mail" placeholder="johndoe@gmail.com" required>
       
-        <label>Email: <input type="email" name="mail" placeholder="johndoe@gmail.com" required></label><br><br>
+        <label id="phone"> Phone </label>
+        <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
+                              placeholder="351 910 890 331">
       
-        <label> Phone: <input type="tel" maxlength="12" pattern="[0-9]{3]-[0-9]{3]-[0-9]{3]-[0-9]{3]-"
-                              placeholder="351 910 890 331"></label><br>
-      
-        <div id="card_info">
-            <h3>Card Info</h3>
-            <label>Card Number: <input type="text" pattern="[0-9]{16}" 
-                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required></label><br><br>
+            <label id="card-n">Card Number </label>
+            <input type="text" pattern="[0-9]{16}" 
+                                       placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
           
-            <label>Expiry Date: </label>
+            <label id="card-date">Expiry Date </label>
 
-            <select name="card_m" required>
+            <select id="card_m" name="card_m" required>
                 <option value="">Month</option>
                 <option value="jan">January</option>
                 <option value="fev">February</option>
@@ -83,7 +107,7 @@
                 <option value="dec">December</option>
             </select>
 
-            <select name="card_y" required>
+            <select id="card_y" name="card_y" required>
                 <option value="">Year</option>
                 <option value="2024">2024</option>
                 <option value="2025">2025</option>
@@ -97,15 +121,17 @@
                 <option value="2033">2033</option>
             </select>
 
-            <label>CVV: <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required></label>
-        </div><br>
+            <label id="cvv">CVV </label>
+            <input id="i_cvv" type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
+
       
-        <input type="submit" value="Submit">
+            <div><button id="form_b" type="submit" value="Submit">Submit</div>
     </fieldset>
   </form>
   
-     <div><img src="imagens/grant-ritchie.jpg" alt="Building" width="482"></div>
-  
+     <div id="build"><img src="imagens/grant-ritchie.jpg" alt="Building"></div>
+    </section>
+
     <footer>
         <div id="find-us">
             <h3>FIND US</h3>
@@ -153,6 +179,6 @@
             <img src="imagens/CAFE_logo.png" alt="CAFE Logo" width="250">
         </div>
     </footer>
-
+</div>
 </body>
 </html>
