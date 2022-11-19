@@ -104,6 +104,7 @@ h1{
     font-weight: 600;
 }
 
+
 #menu-click, #menuicon, #menuicon_close{
     position: fixed;
     top: 40px;
@@ -128,16 +129,19 @@ h1{
     margin: 2px;
 }
 
-
-#menu-click:checked + .burguer{
-   display: none;
+.burguer ul{
+    display: none;
 }
 
-#menu-click:not(:checked) ~ #menuicon{
+#menu-click:checked + .burguer ul{
+   display: block;
+}
+
+#menu-click:not(:checked) ~ #menuicon_close{
     display: none;
  }
 
-#menu-click:checked ~ #menuicon_close{
+#menu-click:checked ~ #menuicon{
     display: none;
  }
 
