@@ -40,7 +40,7 @@ h1{
     left: 0;
     right: 0;
     position: fixed;
-    z-index: 20;
+    z-index: 50;
 }
 .header1 nav ul{
     display: grid;
@@ -850,7 +850,7 @@ figcaption{
 }
 
 .form-tickets input, .form-tickets select{
-    font-size: 0.9vw;
+    font-size: 1vw;
     margin: 0;
     border-radius: 0;
     appearance: none;
@@ -880,10 +880,10 @@ figcaption{
     border: var(--borda);
     font-family: inherit;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: inherit;
     text-transform: uppercase;
-    /* bottom: 7.5%; */
-    transform: translateY(100%);
+    top: 130%;
+    bottom: 0px;
     left: 35%;
     transition: var(--trans);
 }
@@ -901,52 +901,6 @@ figcaption{
 /* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
 /* ------------------------------------------ MEDIA QUERIES ------------------------------------------ */
 
-
-
-/* @media screen and (max-width: 600px) {
-.aboutus{
-    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
-    background-size: 100vw;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(9, 5vw);
-    grid-gap: 2em;
-}
-
-
-.comments{
-    display: grid;
-    grid-template-columns: repeat(5% 1fr 1fr 5%);
-    grid-template-rows: repeat(9, 5vw);
-    grid-gap: 2em;
-}
-
-
-.artist-pics{
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(20, 5vw);
-    grid-gap: 2em;
-}
-
-
-.expositions{
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: repeat(26, 5vw);
-    grid-gap: 2em;
-}
-
-
-.tickets{
-    display: grid;
-    grid-template-columns: 5% repeat(5% 1fr 15% 1fr 5%);
-    grid-template-rows: repeat(10, 5vw);
-    grid-gap: 2em;
-}
-} */
-
-/* @media screen and (max-width: 600px) { */
 
 
 
@@ -993,45 +947,15 @@ figcaption{
     #imgbox, #img1, #img2, #img3{
         display: none;
     }
-    /* #imgbox{
-        display: inline-block;
-        border: var(--borda);
-        margin: -40px 30px -40px 30px;
-        grid-column: 2/3;
-        grid-row: 3/9;
-    }
-    #img1{
-        grid-column: 2/3;
-        grid-row: 3/5;
-    }
-    
-    #img2{
-        grid-column: 2/3;
-        grid-row: 5/7;
-    }
-    
-    #img3{
-        grid-column: 2/3;
-        grid-row: 7/9;
-    } */
 
 
-}
 
 /* ------------------------------------------  COMMENTS ------------------------------------------ */
 /* ------------------------------------------  COMMENTS ------------------------------------------ */
 /* ------------------------------------------  COMMENTS ------------------------------------------ */
 /* ------------------------------------------  COMMENTS ------------------------------------------ */
 
-@media screen and (max-width: 600px) {
 
-.header1{
-    display: none;
-}
-
-.header2{
-    display: block;
-}
 
     .comments{
         display: grid;
@@ -1084,23 +1008,12 @@ figcaption{
     #c3,#c2{
         display: none;
     }
-    /* #c2{
-        grid-column: 2/5;
-        grid-row: 3/5;
-    } */
-    /* #c3{
-        grid-column: 2/5;
-        grid-row: 5/7;
-    } */
-    
-
     
     .comments form{
         position: relative;
         grid-column: 1/6;
         grid-row: 7/9;
     }
-}
     
 
 
@@ -1111,14 +1024,11 @@ figcaption{
 /* ------------------------------------------  ARTISTS ------------------------------------------ */
 /* ------------------------------------------  ARTISTS ------------------------------------------ */
 /* ------------------------------------------  ARTISTS ------------------------------------------ */
-
-@media screen and (max-width: 600px) {  
    
     
     .artist-pics{
         display: grid;
         grid-template-columns: 5% 1fr 5%;
-        /* grid-template-rows: 5vh repeat(8,1fr); */
         grid-template-rows: repeat(40, 5vh);
         grid-gap: 2em;
     }
@@ -1181,7 +1091,8 @@ figcaption{
         transition: var(--trans);
     }
 
-}
+
+    
 
     
 /* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
@@ -1190,7 +1101,8 @@ figcaption{
 /* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
 
 
-@media screen and (max-width: 600px) {
+
+
     .expositions{
         display: grid;
         grid-template-columns: 5% 1fr 5%;
@@ -1212,12 +1124,14 @@ figcaption{
     display: inline-block;
     grid-column: 2/3;
     grid-row: 29/30;
+    top: 50%;
   }
 
   #-bernd{
     display: inline-block;
     grid-column: 2/3;
-    grid-row: 39/40;
+    grid-row: 38/39;
+    top: 50%;
   }
 
   #velizar{
@@ -1267,11 +1181,12 @@ figcaption{
 #velizar{
     grid-column: 2/3;
     grid-row: 30/32;
+    top: 20%;
 }
 
 #bernd{
     grid-column: 2/3;
-    grid-row: 40/42;
+    grid-row: 39/41;
 }
 
 
@@ -1318,19 +1233,80 @@ figcaption{
     grid-row: 37/42;
 }
 
+
+
+
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+
+
+
+.tickets{
+    grid-template-rows: repeat(16, 5vw);
+}
+
+#build{
+    display: none;
+}
+.form-tickets{
+
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: repeat(7,10vw);
+    padding: 0;
+}    
+
+#cafe_h1{
+    grid-column: 2/12;
+    grid-row: 2/4; 
+}
+
+#cafe_h4{
+    grid-column: 2/12;
+    grid-row: 5/6; 
+}
+
+.buy-tickets{
+    display: inline-block;
+    position: relative;
+    grid-column: 2/12;
+    grid-row: 6/15;
+}
+
+.checkme{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    grid-column: 2/12;
+    grid-row: 6/15;
 }
 
 
 
-/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
-/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
-/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
-/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+.buy-tickets{
+    grid-column: 2/12;
+    grid-row: 6/15;
+}
 
 
+.form-tickets label{
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding: 0.9em;
+    border: var(--borda);
+    width: auto;
+}
 
+.form-tickets input, .form-tickets select{
+    font-size: 1.7vw;
+}
 
-
+#form_b{
+    top: 100%;
+}
 
 
 /* ------------------------------------------  FOOTER ------------------------------------------ */
@@ -1340,7 +1316,7 @@ figcaption{
 
 
     
-@media screen and (max-width: 600px) { 
+
 
 footer{
     display: grid;
@@ -1374,7 +1350,6 @@ footer nav ul li a{
     display: inline-block;
     position: relative;
     text-decoration: none;
-    /* text-align: center; */
 }
 
 footer img{
@@ -1406,6 +1381,7 @@ a:active{ color: white; }
 #menu{
     display: none;
 }
+
 }
 
 /* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
@@ -1422,32 +1398,4 @@ a:active{ color: white; }
 
 }
 
-
-
-/* @media screen and (min-width: 412px) {
-    
-    .burguer{
-        padding: 0.9em;
-        width: 0.4vw;
-        height: 2vw;
-    }
-    .dot{
-        display: inline-block;
-        position: absolute;
-        background-color: white;
-        width: 0.3vw;
-        height: 0.3vw ;
-        bottom: 0.7vw;
-        border-radius: 20px;
-    }
-    
-    .dot2{
-        bottom: 1.4vw;
-    }
-    
-    .dot3{
-        bottom: 2.1vw;
-    }
-
-} */
 
