@@ -33,7 +33,7 @@ h1{
 
 
 .header1{
-    display: flexbox;
+    display: inline-block;
     border-bottom: var(--borda);
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
