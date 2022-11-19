@@ -73,7 +73,7 @@ h1{
 } 
 
 .header2 {
-    display: inline-block;
+    display:none;
     width: 150px;
 }
 
@@ -220,10 +220,7 @@ a:active{ color: white; }
 
 
 .abovefold{
-    display: flex;
-    flex-direction: column;
-    height: calc(100vw * 0.5);
-    bottom: 0;
+ width: 100%;
 }
 
 .gradient{
@@ -265,6 +262,7 @@ a:active{ color: white; }
 .myvideo video{
     display: inline-block;
     object-fit: fill;
+    width: 100%;
 }
 
 video{
@@ -608,6 +606,33 @@ figcaption{
 
 
 /* Captions */
+
+#-marek{
+    display: inline-block;
+    grid-column: 5/6;
+    grid-row: 2/3;
+    top: 50%;
+  }
+  #-peter{
+    display: inline-block;
+    grid-column: 5/6;
+    grid-row: 8/9;
+    top: 50%;
+  }
+
+  #-velizar{
+    display: inline-block;
+    grid-column: 5/6;
+    grid-row: 14/15;
+    top: 50%;
+  }
+
+  #-bernd{
+    display: inline-block;
+    grid-column: 5/6;
+    grid-row: 20/21;
+    top: 50%;
+  }
 
 
 #marek{
@@ -1134,9 +1159,6 @@ figcaption{
     top: 50%;
   }
 
-  #velizar{
-    background-color: rgba(0,0,0,0.5);
-  }
     /* Titles */
 
 
@@ -1382,6 +1404,14 @@ a:active{ color: white; }
     display: none;
 }
 
+.header1{
+    display: none;
+}
+
+.header2, .burguer{
+    display: block;
+}
+
 }
 
 /* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
@@ -1389,13 +1419,5 @@ a:active{ color: white; }
 /* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
 /* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
 
-
-@media screen and (max-width: 700px) {
-    
-    #menu-click, .burguer{
-        display: inline-block;
-    }
-
-}
 
 
