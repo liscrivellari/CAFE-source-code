@@ -1215,57 +1215,60 @@ figcaption{
 /* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 
 
-    
-/* @media screen and (max-width: 600px) {
-    .tickets{
-   
-         display: grid; 
-        grid-template-columns: 5% 1fr 15% 1fr 5%;
-        grid-template-rows: (10, 5vw);
-        grid-gap: 2em;
-    }
-
-#logo{
-    position: relative;
-    right: 25%;
-    grid-column: 2/3;
-    grid-row: 2/4;
-    opacity: 50%;
-}
 
 #build{
-    position: relative;
-    bottom: 25px;
-    grid-column: 7/13o;
-    grid-row: 1/10;
+    display: none;
 }
+.form-tickets{
 
-.tickets h1, .tickets h4{
-    display: inline-block;
-    position: relative;
-}
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: repeat(8,10vw);
+    padding: 0;
+}    
 
 #cafe_h1{
-    grid-column: 2/7;
-    grid-row: 2/3;
-    font-size: 2.5em;
+    grid-column: 2/12;
+    grid-row: 2/4; 
 }
 
 #cafe_h4{
-    transform: translateY(-300%);
-    grid-column: 2/7;
-    grid-row-start: 4;
-    text-transform: uppercase;
-    font-weight: 200;
-    font-style: italic;
+    grid-column: 2/12;
+    grid-row: 5/6; 
 }
 
 .buy-tickets{
-    grid-column: 2/7;
-    grid-row: 4/10;
+    display: inline-block;
+    position: relative;
+    grid-column: 2/12;
+    grid-row: 6/15;
 }
-} */
 
+.checkme{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    grid-column: 2/12;
+    grid-row: 6/15;
+}
+
+
+
+
+.buy-tickets{
+    grid-column: 2/12;
+    grid-row: 6/15;
+}
+
+
+.form-tickets label{
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding: 0.9em;
+    border: var(--borda);
+    width: auto;
+}
 
 
 /* ------------------------------------------  FOOTER ------------------------------------------ */
@@ -1340,5 +1343,6 @@ a:active{ color: white; }
 #menu{
     display: none;
 }
+
 }
 
