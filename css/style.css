@@ -12,6 +12,7 @@ html{
 }
 
 body{
+    margin: 0;
     background-color: black;
     font-size: 1.3vw;
 }
@@ -22,13 +23,16 @@ h1{
 
 
 
+
 /* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 /* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 /* ------------------------------------------ HEADER/FOOTER ------------------------------------------ */
 
 
 
-header{
+
+
+.header1{
     display: flexbox;
     border-bottom: var(--borda);
     background-color: rgba(0, 0, 0, 0.5);
@@ -38,7 +42,7 @@ header{
     position: fixed;
     z-index: 20;
 }
-header nav ul{
+.header1 nav ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5em;
@@ -46,17 +50,17 @@ header nav ul{
     list-style: none;
 }
 
-header nav ul li{
+.header1 nav ul li{
     text-align: center;
     line-height: 1.5em;
 }
-header nav ul li a{
+.header1 nav ul li a{
     display: inline-block;
     position: relative;
     text-decoration: none;
 }
 
-header nav ul li a::after{
+.header1 nav ul li a::after{
     content: "";
     transform: scale(0,1);
     position: absolute;
@@ -66,8 +70,42 @@ header nav ul li a::after{
     left: 0;
     bottom: 0;
     transition: 0.3s ease;
+} 
+
+/* ------- DELETE LATER ------- */
+
+.header1{
+    display: none;
 }
 
+/* ------- DELETE LATER ------- */
+
+.header2 {
+    display: inline-block;
+    width: 150px;
+}
+
+.header2 ul{
+    padding: 0%;
+    position: fixed;
+    list-style:none;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: var(--borda);
+    right: 0px;
+    z-index: 30;
+}
+
+.header2 ul li{
+    margin: 0px;
+    padding: 10%;
+    text-align: right;
+}
+
+.header2 ul li a{
+    text-decoration: none;
+    font-weight: 600;
+}
 
 footer{
     display: grid;
@@ -91,7 +129,6 @@ footer nav ul{
     margin-right: auto;
     margin-left: auto;
 }
-
 
 footer nav ul li{
     line-height: 1.5em;
@@ -123,11 +160,48 @@ header nav ul li a:hover::after{ transform: scale(1,1); }
 
 header nav ul li a:visited{ color: #eee; }
 
-
 a:active{ color: white; }
+
+
+#menu-click{
+    appearance: none;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    z-index: 1;
+    margin: 2px;
+
+}
+
+#menuicon, #menuicon_close{
+    position: absolute;
+    width: 2vw;
+    min-width: 15px;
+    margin: 2px;
+    right: 0;
+}
+
+#menu-click:checked{
+    background-color: white;
+    opacity: 50%;
+}
+
+#menu-click:checked + .navheader{
+   display: none;
+}
 
 #socialmedia_link{
     color: white;
+}
+
+#menu-click, .burguer{
+    display: none;
+}
+
+#menu-click, #menuicon, #menuicon_close{
+    display: none;
 }
 
 
@@ -137,7 +211,6 @@ a:active{ color: white; }
 /* ------------------------------------------  INDEX/HOMEPAGE ------------------------------------------ */
 /* ------------------------------------------  INDEX/HOMEPAGE ------------------------------------------ */
 /* ------------------------------------------  INDEX/HOMEPAGE ------------------------------------------ */
-
 
 
 
@@ -145,13 +218,12 @@ a:active{ color: white; }
 .abovefold{
     display: flex;
     flex-direction: column;
-    height: 650px;
+    height: calc(100vw * 0.5);
     bottom: 0;
 }
 
 .gradient{
     display: inline-block;
-    position: absolute;
     width: 100%;
     height: 25%;
     background: rgb(0,0,0);
@@ -159,7 +231,7 @@ a:active{ color: white; }
 }
 
 .abovefold #g1{
-    top: calc(650px - 24%);
+    transform: translateY(185%);
 }
 
 .titulo{
@@ -201,7 +273,7 @@ video{
 }
 
 .aboutus{
-    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
+    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);
     background-size: 100vw;
     display: grid;
     grid-template-columns: 5% 1fr 15% 1fr 5%;
@@ -340,7 +412,7 @@ video{
     background-color: black;
     border: var(--borda);
     transition: var(--trans);
-} 
+}
 
 #comment:hover{
     background-color: white;
@@ -662,11 +734,6 @@ figcaption{
     grid-row: 4/10;
 }
 
-
-/* ----------------------------------- CORRECT THIS ----------------------------------- */
-/* ----------------------------------- CORRECT THIS ----------------------------------- */
-
-
 .checkme{
     display: inline-block;
     position: relative;
@@ -821,6 +888,7 @@ figcaption{
     transform: scale(1.2);
     cursor: pointer;
 }
+
 
 
 
@@ -1326,3 +1394,47 @@ a:active{ color: white; }
     display: none;
 }
 }
+=======
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+/* ------------------------------------------  MEDIA QUERYS ------------------------------------------ */
+
+
+@media screen and (max-width: 700px) {
+    
+    #menu-click, .burguer{
+        display: inline-block;
+    }
+
+}
+
+
+
+/* @media screen and (min-width: 412px) {
+    
+    .burguer{
+        padding: 0.9em;
+        width: 0.4vw;
+        height: 2vw;
+    }
+    .dot{
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        width: 0.3vw;
+        height: 0.3vw ;
+        bottom: 0.7vw;
+        border-radius: 20px;
+    }
+    
+    .dot2{
+        bottom: 1.4vw;
+    }
+    
+    .dot3{
+        bottom: 2.1vw;
+    }
+
+} */
+
