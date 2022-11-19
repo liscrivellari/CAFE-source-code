@@ -405,7 +405,6 @@ figcaption{
     font-weight: 400;
     z-index: 1;
     transition: var(--trans);
-
 }
 
 .artist-pics img{
@@ -832,44 +831,498 @@ figcaption{
 
 
 
-
-/* .aboutus{
+/* @media screen and (max-width: 600px) {
+.aboutus{
     background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
     background-size: 100vw;
     display: grid;
-    grid-template-columns: 5% 1fr 15% 1fr 5%;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(9, 5vw);
     grid-gap: 2em;
-} */
+}
 
 
-/* .comments{
+.comments{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(5% 1fr 1fr 5%);
     grid-template-rows: repeat(9, 5vw);
     grid-gap: 2em;
-} */
+}
 
 
-/* .artist-pics{
+.artist-pics{
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(20, 5vw);
     grid-gap: 2em;
-} */
+}
 
 
-/* .expositions{
+.expositions{
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-columns: 5% 1fr 1fr 5%;
     grid-template-rows: repeat(26, 5vw);
     grid-gap: 2em;
-} */
+}
 
 
-/* .tickets{
+.tickets{
     display: grid;
-    grid-template-columns: 5% repeat(10, 1fr) 5%;
+    grid-template-columns: 5% repeat(5% 1fr 15% 1fr 5%);
     grid-template-rows: repeat(10, 5vw);
     grid-gap: 2em;
+}
 } */
+
+/* @media screen and (max-width: 600px) { */
+
+
+
+/* ------------------------------------------  ABOUT US ------------------------------------------ */
+
+
+@media screen and (max-width: 600px) {
+
+    body{
+        font-size: 2.5vw;
+    }
+    .aboutus{
+        background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
+        background-size: 100vw;
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: repeat(9, 5vw);
+        grid-gap: 2em;
+    }
+    
+
+
+    .aboutus #g2{
+        position: relative;
+        height: 100%;
+        grid-column: 2/3;
+        grid-row: 8/10;
+        bottom: 0;
+    }
+    
+    .aboutus #abtus{
+        display: inline-block;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .aboutus p{
+        line-height: 1.5em;
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+    #imgbox, #img1, #img2, #img3{
+        display: none;
+    }
+    /* #imgbox{
+        display: inline-block;
+        border: var(--borda);
+        margin: -40px 30px -40px 30px;
+        grid-column: 2/3;
+        grid-row: 3/9;
+    }
+    #img1{
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+    
+    #img2{
+        grid-column: 2/3;
+        grid-row: 5/7;
+    }
+    
+    #img3{
+        grid-column: 2/3;
+        grid-row: 7/9;
+    } */
+
+
+}
+
+/* ------------------------------------------  COMMENTS ------------------------------------------ */
+/* ------------------------------------------  COMMENTS ------------------------------------------ */
+/* ------------------------------------------  COMMENTS ------------------------------------------ */
+/* ------------------------------------------  COMMENTS ------------------------------------------ */
+
+@media screen and (max-width: 600px) {
+    .comments{
+        display: grid;
+        grid-template-columns: 5% 1fr 15% 1fr 5%;
+        grid-template-rows: repeat(9, 5vw);
+        grid-gap: 2em;
+    }
+
+
+
+
+    .comments h1{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    
+    .comments p{
+        position: relative;
+        vertical-align: middle;
+    }
+    
+    #c1, #c2, #c3, #c4{
+        display: inline-block;
+        padding: 1.5em;
+        margin: -2px;
+        border: var(--borda);
+        text-align: center;
+        transition: var(--trans);
+    }
+    
+    .comments p:hover{
+        color: black;
+        background-color: white;
+    }
+    
+    #c1{
+        grid-column: 2/5;
+        grid-row: 3/5;
+    }
+    
+    #c4{
+        grid-column: 2/5;
+        grid-row: 5/7;
+    }
+
+    
+    #c3,#c2{
+        display: none;
+    }
+    /* #c2{
+        grid-column: 2/5;
+        grid-row: 3/5;
+    } */
+    /* #c3{
+        grid-column: 2/5;
+        grid-row: 5/7;
+    } */
+    
+
+    
+    .comments form{
+        position: relative;
+        grid-column: 1/6;
+        grid-row: 7/9;
+    }
+}
+    
+
+
+
+
+
+/* ------------------------------------------  ARTISTS ------------------------------------------ */
+/* ------------------------------------------  ARTISTS ------------------------------------------ */
+/* ------------------------------------------  ARTISTS ------------------------------------------ */
+/* ------------------------------------------  ARTISTS ------------------------------------------ */
+
+@media screen and (max-width: 600px) {  
+   
+    
+    .artist-pics{
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        /* grid-template-rows: 5vh repeat(8,1fr); */
+        grid-template-rows: repeat(40, 5vh);
+        grid-gap: 2em;
+    }
+
+    #sprat{
+        grid-column: 2/3;
+        grid-row: 2/6;
+        z-index: 20;
+    }
+    
+    #polyanskaya{
+        grid-column: 2/3;
+        grid-row: 6/10;
+        z-index: 20;
+    }
+    
+    #golovesov{
+        grid-column: 2/3;
+        grid-row: 10/17;
+    }
+    
+    #dittrich{
+        grid-column: 2/3;
+        grid-row: 17/21;
+        z-index: 20;
+    }
+    
+    #piwnicki{
+        grid-column: 2/3;
+        grid-row: 21/28;
+        z-index: 20;
+    }
+    
+    #steiner{
+        grid-column: 2/3;
+        grid-row: 28/32;
+        z-index: 20;
+    }
+    
+    #ivanov{
+        grid-column: 2/3;
+        grid-row: 32/36;
+        z-index: 20;
+    }
+    
+    #hasselmann{
+        grid-column: 2/3;
+        grid-row: 36/40;
+        z-index: 20;
+    }
+    
+    figcaption{
+        position: relative;
+        left: 10vw;
+        bottom: 15vw;
+        font-size: 5vw;
+        font-style: italic;
+        font-weight: 400;
+        z-index: 1;
+        transition: var(--trans);
+    }
+
+}
+
+    
+/* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
+/* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
+/* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
+/* ------------------------------------------ EXPOSITIONS ------------------------------------------ */
+
+
+@media screen and (max-width: 600px) {
+    .expositions{
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: repeat(26, 5vw);
+        grid-gap: 2em;
+    }
+
+  #-marek{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  #-peter{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 18/19;
+  }
+  #-velizar{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 29/30;
+  }
+
+  #-bernd{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-row: 39/40;
+  }
+
+  #velizar{
+    background-color: rgba(0,0,0,0.5);
+  }
+    /* Titles */
+
+
+.marek{
+    z-index: 20;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.peter{
+    z-index: 20;
+    grid-column: 2/3;
+    grid-row: 13/14;
+}
+
+.velizar{
+    z-index: 20;
+    grid-column: 2/3;
+    grid-row: 23/24;
+}
+
+.bernd{
+    z-index: 20;
+    grid-column: 2/3;
+    grid-row: 33/34;
+}
+
+
+/* Captions */
+
+
+#marek{
+    grid-column: 2/3;
+    grid-row: 9/11;
+}
+
+#peter{
+    grid-column: 2/3;
+    grid-row: 19/20;
+}
+
+#velizar{
+    grid-column: 2/3;
+    grid-row: 30/32;
+}
+
+#bernd{
+    grid-column: 2/3;
+    grid-row: 40/42;
+}
+
+
+/* Images */
+
+
+#ex1{
+    grid-column: 2/3;
+    grid-row: 2/7;
+}
+
+#ex2{
+    grid-column: 2/3;
+    grid-row: 7/12;
+}
+
+#ex3{
+    grid-column: 2/3;
+    grid-row: 12/17;
+}
+
+#ex4{
+    grid-column: 2/3;
+    grid-row: 17/22;
+}
+
+#ex5{
+    grid-column: 2/3;
+    grid-row: 22/27;
+}
+
+#ex6{
+    grid-column: 2/3;
+    grid-row: 27/32;
+}
+
+#ex7{
+    grid-column: 2/3;
+    grid-row: 32/37;
+}
+
+#ex8{
+    grid-column: 2/3;
+    grid-row: 37/42;
+}
+
+}
+
+
+
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+/* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
+
+
+
+
+
+
+
+/* ------------------------------------------  FOOTER ------------------------------------------ */
+/* ------------------------------------------  FOOTER ------------------------------------------ */
+/* ------------------------------------------  FOOTER ------------------------------------------ */
+/* ------------------------------------------  FOOTER ------------------------------------------ */
+
+
+    
+@media screen and (max-width: 600px) { 
+
+footer{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-gap: 2vw;
+    border-top: var(--borda);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer nav ul{
+    width: fit-content;
+    padding: 0;
+    list-style: none;
+}
+
+#find-us, #social-media{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+footer nav ul li{
+    line-height: 1.5em;
+}
+footer nav ul li a{
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    /* text-align: center; */
+}
+
+footer img{
+    display: none;
+}
+
+
+#find-us{
+    grid-column:2/3;
+
+}
+#social-media{
+    grid-column: 5/6;
+}
+
+footer nav ul li a:visited{ color: #eee; }
+
+header nav ul li a:hover::after{ transform: scale(1,1); }
+
+header nav ul li a:visited{ color: #eee; }
+
+
+a:active{ color: white; }
+
+#socialmedia_link{
+    color: white;
+    
+}
+#menu{
+    display: none;
+}
+}
