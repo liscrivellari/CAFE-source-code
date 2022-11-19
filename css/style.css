@@ -834,52 +834,6 @@ figcaption{
 
 
 
-/* @media screen and (max-width: 600px) {
-.aboutus{
-    background-image: url(https://images.unsplash.com/photo-1634712840728-5417d1bbea9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);    
-    background-size: 100vw;
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(9, 5vw);
-    grid-gap: 2em;
-}
-
-
-.comments{
-    display: grid;
-    grid-template-columns: repeat(5% 1fr 1fr 5%);
-    grid-template-rows: repeat(9, 5vw);
-    grid-gap: 2em;
-}
-
-
-.artist-pics{
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(20, 5vw);
-    grid-gap: 2em;
-}
-
-
-.expositions{
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: repeat(26, 5vw);
-    grid-gap: 2em;
-}
-
-
-.tickets{
-    display: grid;
-    grid-template-columns: 5% repeat(5% 1fr 15% 1fr 5%);
-    grid-template-rows: repeat(10, 5vw);
-    grid-gap: 2em;
-}
-} */
-
-/* @media screen and (max-width: 600px) { */
-
-
 
 /* ------------------------------------------  ABOUT US ------------------------------------------ */
 
@@ -1101,12 +1055,14 @@ figcaption{
     display: inline-block;
     grid-column: 2/3;
     grid-row: 29/30;
+    top: 50%;
   }
 
   #-bernd{
     display: inline-block;
     grid-column: 2/3;
-    grid-row: 39/40;
+    grid-row: 38/39;
+    top: 50%;
   }
 
   #velizar{
@@ -1156,11 +1112,12 @@ figcaption{
 #velizar{
     grid-column: 2/3;
     grid-row: 30/32;
+    top: 20%;
 }
 
 #bernd{
     grid-column: 2/3;
-    grid-row: 40/42;
+    grid-row: 39/41;
 }
 
 
@@ -1210,13 +1167,16 @@ figcaption{
 
 
 
-
 /* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 /* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 /* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 /* ------------------------------------------  TICKETS/FORM ------------------------------------------ */
 
 
+
+.tickets{
+    grid-template-rows: repeat(16, 5vw);
+}
 
 #build{
     display: none;
@@ -1225,7 +1185,7 @@ figcaption{
 
     display: grid;
     grid-column: 1fr;
-    grid-template-rows: repeat(8,10vw);
+    grid-template-rows: repeat(7,10vw);
     padding: 0;
 }    
 
@@ -1256,7 +1216,6 @@ figcaption{
 
 
 
-
 .buy-tickets{
     grid-column: 2/12;
     grid-row: 6/15;
@@ -1270,6 +1229,14 @@ figcaption{
     padding: 0.9em;
     border: var(--borda);
     width: auto;
+}
+
+.form-tickets input, .form-tickets select{
+    font-size: 1.7vw;
+}
+
+#form_b{
+    top: 100%;
 }
 
 
