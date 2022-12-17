@@ -465,27 +465,6 @@ video{
     #imgbox, #img1, #img2, #img3{
         display: none;
     }
-    /* #imgbox{
-        display: inline-block;
-        border: var(--borda);
-        margin: -40px 30px -40px 30px;
-        grid-column: 2/3;
-        grid-row: 3/9;
-    }
-    #img1{
-        grid-column: 2/3;
-        grid-row: 3/5;
-    }
-    
-    #img2{
-        grid-column: 2/3;
-        grid-row: 5/7;
-    }
-    
-    #img3{
-        grid-column: 2/3;
-        grid-row: 7/9;
-    } */
 
 
 }
@@ -547,15 +526,6 @@ video{
     #c3,#c2{
         display: none;
     }
-    /* #c2{
-        grid-column: 2/5;
-        grid-row: 3/5;
-    } */
-    /* #c3{
-        grid-column: 2/5;
-        grid-row: 5/7;
-    } */
-    
 
     
     .comments form{
