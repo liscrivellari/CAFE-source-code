@@ -1,0 +1,145 @@
+.expositions{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-template-rows: repeat(26, 5vw);
+    grid-gap: 2em;
+}
+
+.expositions h1{
+    display: inline-block;
+    position: absolute;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: italic;
+    transition: var(--trans);
+}
+
+.expositions h1:hover{
+    font-size: 5em;
+}
+
+.expositions h3{
+    text-transform: uppercase;
+    position: relative;
+    bottom: 20%;
+}
+
+.expositions img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Titles */
+
+
+.marek{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.peter{
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+
+.velizar{
+    grid-column: 2/3;
+    grid-row: 14/15;
+}
+
+.bernd{
+    grid-column: 2/3;
+    grid-row: 20/21;
+}
+
+
+/* Captions */
+
+
+#marek{
+    grid-column: 5/6;
+    grid-row: 3/6;
+}
+
+#peter{
+    grid-column: 5/6;
+    grid-row: 9/12;
+}
+
+#velizar{
+    grid-column: 5/6;
+    grid-row: 15/18;
+}
+
+#bernd{
+    grid-column: 5/6;
+    grid-row: 21/24;
+}
+
+
+/* Images */
+
+
+#ex1{
+    grid-column: 3/5;
+    grid-row: 2/5;
+}
+
+#ex2{
+    grid-column: 3/5;
+    grid-row: 5/8;
+}
+
+#ex3{
+    grid-column: 3/5;
+    grid-row: 8/11;
+}
+
+#ex4{
+    grid-column: 3/5;
+    grid-row: 11/14;
+}
+
+#ex5{
+    grid-column: 3/5;
+    grid-row: 14/17;
+}
+
+#ex6{
+    grid-column: 3/5;
+    grid-row: 17/20;
+}
+
+#ex7{
+    grid-column: 3/5;
+    grid-row: 20/23;
+}
+
+#ex8{
+    grid-column: 3/5;
+    grid-row: 23/26;
+}
+
+/* Lorem */
+
+/* #-marek{
+    grid-column: 5/6;
+    grid-row: 3/6;
+}
+
+#-peter{
+    grid-column: 5/6;
+    grid-row: 9/12;
+}
+
+#-velizar{
+    grid-column: 5/6;
+    grid-row: 15/18;
+}
+
+#-bernd{
+    grid-column: 5/6;
+    grid-row: 21/24;
+} */
